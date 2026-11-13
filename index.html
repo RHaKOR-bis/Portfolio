@@ -1,252 +1,371 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio BTS SIO | Hippolite Spiegel</title>
-    <link rel="stylesheet" href="Style2.css">
-    <link rel="icon" href="../Portfolio/image portfolio/OIP.webp">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio de Hippolite Spiegel, étudiant en BTS SIO option SISR : réalisations, stages, veille technologique et tableau de synthèse.">
+<title>Hippolite Spiegel | Portfolio BTS SIO SISR</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-content">
-            <div class="logo">Hippolite Spiegel</div>
-            <ul class="nav-links">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#parcours">Parcours</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#veille">Veille Techno</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="logo" href="#accueil">H. Spiegel</a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" aria-label="Navigation principale">
+      <a href="#apropos">À propos</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#competences">Compétences</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#synthese">Synthèse</a>
+      <a href="#stages">Stages</a>
+      <a href="#veille">Veille</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </div>
+</header>
 
-    <!-- Welcome Section -->
-    <section id="accueil">
-        <div class="welcome-content">
-            <img src="../../../Images/Drôle/d5fb7acba3fc3fab17c87780beef0e89.jpg">
-            <h1>Hippolite Spiegel</h1>
-            <p>Étudiant BTS SIO - Option SISR</p>
-            <a href="#apropos" class="cta-button">Découvrir mon profil</a>
-        </div>
-    </section>
+<main id="contenu">
 
-    <!-- About Section -->
-    <section id="apropos">
-        <div class="container">
-            <h2>À propos</h2>
-            <div class="about-grid">
-                <div class="about-card">
-                    <h3>📋 Informations personnelles</h3>
-                    <p>Étudiant passionné en BTS SIO, option SISR (Solutions d'Infrastructure, Systèmes et Réseaux). Je développe mes compétences en administration système, réseaux et cybersécurité.</p>
-                    <a href="../../Portfolio/CV Hippolite Mewo 20250507.pdf" class="download-btn">📥 Télécharger mon CV</a>
-                </div>
-                <div class="about-card">
-                    <h3>🎯 BTS SIO - Option SISR</h3>
-                    <p>Le BTS SIO forme des professionnels capables de gérer le parc informatique et l'infrastructure réseau d'une organisation. L'option SISR se concentre sur l'administration des systèmes et des réseaux.</p>
-                </div>
-                <div class="about-card">
-                    <h3>💡 Centres d'intérêts</h3>
-                    <p>Lire, voyager de plus en plus, gaming, optimisation,...
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ACCUEIL -->
+<section class="hero" id="accueil">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">BTS SIO, option SISR, 2025-2027</p>
+      <h1>Hippolite Spiegel</h1>
+      <p class="lead">Étudiant en BTS Services Informatiques aux Organisations, spécialisé en Solutions d'Infrastructure, Systèmes et Réseaux. Je conçois, déploie et sécurise des infrastructures.</p>
+      <div class="actions">
+        <a class="btn" href="#realisations">Voir mes réalisations</a>
+        <a class="btn ghost" href="assets/CV-Hippolite-Spiegel.pdf" download>Télécharger mon CV</a>
+      </div>
+    </div>
+    <div class="term" aria-hidden="true">
+      <div class="term-bar"><span></span><span></span><span></span></div>
+<pre><b>$</b> whoami
+hippolite.spiegel
+<b>$</b> cat profil.txt
+formation : BTS SIO option SISR
+lieu      : Metz, France
+focus     : virtualisation, cybersécurité
+outils    : Windows Server, Linux, Proxmox
+<b>$</b> uptime
+en cours de montée en compétences_</pre>
+    </div>
+  </div>
+</section>
 
-    <!-- Parcours Section -->
-    <section id="parcours">
-        <div class="container">
-            <h2>Parcours</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>2025 - 2027</h3>
-                        <h4>BTS SIO - Option SISR</h4>
-                        <p>Formation en cours axée sur l'administration système et réseau, la virtualisation et la cybersécurité.</p>
-                    </div>
-                    <div class="timeline-dot"></div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>2024</h3>
-                        <h4>Baccalauréat</h4>
-                        <p>Obtention du baccalauréat avec spécialité numérique et sciences informatiques et mathématique.</p>
-                    </div>
-                    <div class="timeline-dot"></div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>2023</h3>
-                        <h4>Stage banque EFA</h4>
-                        <p>Dasn le cadre de mon année de seconde, j'ai effectué un stage de 2 semaines dans la banque de EFA auprès du service de support informatique.</p>
-                    </div>
-                    <div class="timeline-dot"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- A PROPOS -->
+<section id="apropos">
+  <div class="wrap">
+    <h2>À propos</h2>
+    <div class="cols">
+      <div>
+        <h3>Qui suis-je</h3>
+        <p>Étudiant à Metz, je me forme à l'administration des systèmes et des réseaux ainsi qu'à la cybersécurité. J'aime comprendre comment une infrastructure fonctionne de bout en bout, de la machine virtuelle au service rendu aux utilisateurs.</p>
+        <p>Après mon BTS, je souhaite poursuivre vers une licence ou un bachelor en administration réseaux et cybersécurité. <!-- À adapter à ton projet réel --></p>
+      </div>
+      <div>
+        <h3>Le BTS SIO option SISR</h3>
+        <p>Ce diplôme forme des techniciens capables de gérer le parc informatique et l'infrastructure réseau d'une organisation : installation, exploitation, supervision, dépannage et sécurisation des systèmes et des réseaux.</p>
+      </div>
+      <div>
+        <h3>Centres d'intérêt</h3>
+        <p>Je lis et je voyage, mais ma passion reste Warhammer : je peins, je lis et je collectionne dans les trois univers. Elle m'apprend la patience, la rigueur et le goût du travail soigné.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Compétences Section -->
-    <section id="competences">
-        <div class="container">
-            <h2>Compétences</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>💻 Langages & Web</h3>
-                    <ul class="skill-list">
-                        <li>HTML / CSS</li>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                        <li>PHP</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>🛠️ Logiciels & Outils</h3>
-                    <ul class="skill-list">
-                        <li>Cisco Packet Tracer</li>
-                        <li>VMware Workstation</li>
-                        <li>VirtualBox</li>
-                        <li>Active Directory</li>
-                        <li>Windows Server</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>🌐 Réseaux & Systèmes</h3>
-                    <ul class="skill-list">
-                        <li>Configuration réseaux</li>
-                        <li>Administration Linux</li>
-                        <li>Administration Windows</li>
-                        <li>Virtualisation</li>
-                        <li>Sécurité informatique</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- PARCOURS -->
+<section id="parcours" class="alt">
+  <div class="wrap">
+    <h2>Parcours</h2>
+    <ol class="timeline">
+      <li>
+        <time>2025 - 2027</time>
+        <h3>BTS SIO option SISR</h3>
+        <p class="meta">[Nom de l'établissement], Metz</p>
+        <p>Administration système et réseau, virtualisation, supervision, cybersécurité, gestion de projet.</p>
+      </li>
+      <li>
+        <time>2024</time>
+        <h3>Baccalauréat général</h3>
+        <p class="meta">[Nom du lycée]</p>
+        <p>Spécialités Numérique et sciences informatiques, et Mathématiques.</p>
+      </li>
+      <li>
+        <time>2023</time>
+        <h3>Stage d'observation, banque EFA</h3>
+        <p class="meta">Classe de seconde, 2 semaines</p>
+        <p>Découverte du service de support informatique d'une banque.</p>
+      </li>
+    </ol>
+  </div>
+</section>
 
-    <!-- Veille Technologique Section -->
-    <section id="veille">
-        <div class="container">
-            <h2>Veille Technologique</h2>
-            <div class="veille-questions">
-                <div class="question-card">
-                    <h3>1. Qu'est-ce que la veille technologique ?</h3>
-                    <p>La veille technologique est un processus de surveillance et d'analyse de l'évolution des technologies, des innovations et des tendances dans un domaine spécifique. Elle permet de rester informé des dernières avancées et de maintenir ses compétences à jour.</p>
-                </div>
-                <div class="question-card">
-                    <h3>2. Quel est le but d'une veille technologique ?</h3>
-                    <p>Le but principal est d'anticiper les évolutions technologiques, d'identifier les opportunités d'innovation, de maintenir sa compétitivité professionnelle et de prendre des décisions éclairées dans son domaine d'expertise.</p>
-                </div>
-                <div class="question-card">
-                    <h3>3. Quels sont les outils de ma veille ?</h3>
-                    <p>J'utilise plusieurs outils pour ma veille technologique : flux RSS, agrégateurs de news (Feedly), réseaux sociaux professionnels (LinkedIn, Twitter), newsletters spécialisées, forums techniques et blogs d'experts du secteur IT.</p>
-                </div>
-                <div class="question-card">
-                    <h3>4. Quel a été le sujet de ma veille technologique ?</h3>
-                    <p>Ma veille se concentre principalement sur les évolutions en matière de virtualisation, de conteneurisation (Docker, Kubernetes), de cybersécurité et des nouvelles solutions d'infrastructure cloud.</p>
-                </div>
-                <div class="question-card">
-                    <h3>5. Quelles sont les différentes thématiques abordées ?</h3>
-                    <p>Les thématiques principales incluent : la sécurité des systèmes d'information, les technologies de virtualisation, l'automatisation des infrastructures (DevOps), le cloud computing et les nouvelles normes en matière de réseaux.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- COMPETENCES -->
+<section id="competences">
+  <div class="wrap">
+    <h2>Compétences</h2>
+    <p class="intro">Organisées selon les trois blocs du référentiel du BTS SIO.</p>
+    <div class="grid3">
+      <article class="card">
+        <h3>Bloc 1 : Support et mise à disposition de services</h3>
+        <ul>
+          <li>Gérer le patrimoine informatique</li>
+          <li>Répondre aux incidents et aux demandes d'assistance</li>
+          <li>Travailler en mode projet</li>
+          <li>Mettre à disposition un service informatique</li>
+          <li>Organiser son développement professionnel</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Bloc 2 : Administration des systèmes et des réseaux</h3>
+        <ul>
+          <li>Concevoir une solution d'infrastructure réseau</li>
+          <li>Installer, tester et déployer une solution</li>
+          <li>Exploiter, dépanner et superviser</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Bloc 3 : Cybersécurité</h3>
+        <ul>
+          <li>Protéger les données à caractère personnel</li>
+          <li>Sécuriser les équipements et les usages</li>
+          <li>Garantir disponibilité, intégrité et confidentialité</li>
+          <li>Assurer la cybersécurité d'une infrastructure</li>
+        </ul>
+      </article>
+    </div>
+    <h3 class="sub">Outils et technologies</h3>
+    <div class="tags">
+      <span>Windows Server</span><span>Active Directory</span><span>DHCP / DNS</span><span>Linux (Debian)</span>
+      <span>VMware Workstation</span><span>VirtualBox</span><span>Cisco Packet Tracer</span><span>VLAN / routage</span>
+      <span>GLPI</span><span>Python</span><span>SQL</span><span>HTML / CSS / JavaScript</span><span>PHP</span>
+    </div>
+  </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Nom</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Sujet</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Envoyer le message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+<!-- REALISATIONS -->
+<section id="realisations" class="alt">
+  <div class="wrap">
+    <h2>Réalisations professionnelles</h2>
+    <p class="intro">Chaque réalisation précise le contexte, mon travail, les outils, les compétences du référentiel mobilisées et les preuves associées. <!-- Les 3 projets ci-dessous sont des modèles : remplace-les par tes vraies réalisations. --></p>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <span>📧 hippolite.spiegel@gmail.com</span>
-                <span>📱 +33 07 67 18 18 05</span>
-                <span>📍 Metz, France</span>
-            </div>
-            <p>&copy; 2025 Hippolite Spiegel - Tous droits réservés</p>
-        </div>
-    </footer>
+    <article class="project">
+      <header>
+        <h3>R1. Déploiement d'un domaine Active Directory</h3>
+        <p class="meta">Contexte : formation, 2025-2026 [à adapter]</p>
+      </header>
+      <dl>
+        <dt>Objectif</dt><dd>Mettre en place un annuaire centralisé avec DHCP, DNS et partages de fichiers pour une PME fictive de 30 postes.</dd>
+        <dt>Mon travail</dt><dd>Installation de Windows Server, création du domaine, des unités d'organisation, des groupes et des GPO, configuration des droits NTFS et de la jonction des postes clients.</dd>
+        <dt>Outils</dt><dd class="tags"><span>Windows Server</span><span>Active Directory</span><span>VMware</span></dd>
+        <dt>Compétences</dt><dd class="tags comp"><span>B2.1</span><span>B2.2</span><span>B2.3</span><span>B3.3</span></dd>
+        <dt>Preuves</dt><dd><a href="assets/preuves/R1-documentation.pdf">Documentation technique (PDF)</a> · <a href="assets/preuves/R1-captures.pdf">Captures d'écran</a></dd>
+      </dl>
+    </article>
 
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
+    <article class="project">
+      <header>
+        <h3>R2. Infrastructure réseau segmentée avec VLAN</h3>
+        <p class="meta">Contexte : formation, 2025-2026 [à adapter]</p>
+      </header>
+      <dl>
+        <dt>Objectif</dt><dd>Concevoir un réseau d'entreprise segmenté (administration, serveurs, utilisateurs, invités) avec routage inter-VLAN et filtrage.</dd>
+        <dt>Mon travail</dt><dd>Plan d'adressage, configuration des commutateurs et du routeur, listes de contrôle d'accès, tests de connectivité et de cloisonnement.</dd>
+        <dt>Outils</dt><dd class="tags"><span>Cisco Packet Tracer</span><span>VLAN</span><span>ACL</span></dd>
+        <dt>Compétences</dt><dd class="tags comp"><span>B2.1</span><span>B2.2</span><span>B3.5</span></dd>
+        <dt>Preuves</dt><dd><a href="assets/preuves/R2-maquette.pkt">Maquette Packet Tracer</a> · <a href="assets/preuves/R2-documentation.pdf">Dossier de conception (PDF)</a></dd>
+      </dl>
+    </article>
 
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+    <article class="project">
+      <header>
+        <h3>R3. Gestion de parc et support avec GLPI</h3>
+        <p class="meta">Contexte : stage ou formation [à adapter]</p>
+      </header>
+      <dl>
+        <dt>Objectif</dt><dd>Inventorier le parc, suivre les incidents et les demandes des utilisateurs, et documenter les procédures.</dd>
+        <dt>Mon travail</dt><dd>Installation de GLPI, inventaire automatique des postes, création des catégories et des niveaux de priorité, traitement de tickets.</dd>
+        <dt>Outils</dt><dd class="tags"><span>GLPI</span><span>Linux</span><span>MariaDB</span></dd>
+        <dt>Compétences</dt><dd class="tags comp"><span>B1.1</span><span>B1.2</span><span>B1.5</span></dd>
+        <dt>Preuves</dt><dd><a href="assets/preuves/R3-procedure.pdf">Procédure d'installation (PDF)</a></dd>
+      </dl>
+    </article>
+  </div>
+</section>
 
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.');
-            e.target.reset();
-        });
+<!-- SYNTHESE -->
+<section id="synthese">
+  <div class="wrap">
+    <h2>Tableau de synthèse</h2>
+    <p class="intro">Les réalisations croisées avec les compétences du référentiel. Il sert de support pour l'épreuve E5. <!-- Coche selon tes vraies réalisations ; vérifie le format attendu avec ton établissement. --></p>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Réalisation</th><th scope="col">Contexte</th>
+            <th scope="col">B1.1</th><th scope="col">B1.2</th><th scope="col">B1.5</th>
+            <th scope="col">B2.1</th><th scope="col">B2.2</th><th scope="col">B2.3</th>
+            <th scope="col">B3.3</th><th scope="col">B3.5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row"><a href="#realisations">R1. Active Directory</a></th><td>Formation</td><td></td><td></td><td></td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td></td></tr>
+          <tr><th scope="row"><a href="#realisations">R2. Réseau VLAN</a></th><td>Formation</td><td></td><td></td><td></td><td>✓</td><td>✓</td><td></td><td></td><td>✓</td></tr>
+          <tr><th scope="row"><a href="#realisations">R3. GLPI</a></th><td>Stage</td><td>✓</td><td>✓</td><td>✓</td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Légende : B1 = support et mise à disposition de services, B2 = administration systèmes et réseaux, B3 = cybersécurité.</p>
+  </div>
+</section>
 
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
+<!-- STAGES -->
+<section id="stages" class="alt">
+  <div class="wrap">
+    <h2>Stages</h2>
+    <p class="intro">Le BTS comporte au moins 10 semaines de stage. <!-- Remplis avec tes vrais stages. --></p>
+    <div class="cols">
+      <article class="card">
+        <h3>Stage 1 : [Nom de l'entreprise]</h3>
+        <p class="meta">[Dates] · [Durée] · [Ville]</p>
+        <p><strong>L'entreprise :</strong> [activité, taille, service informatique].</p>
+        <p><strong>Mes missions :</strong> [missions principales].</p>
+        <p><strong>Ce que j'ai appris :</strong> [compétences acquises].</p>
+        <p><a href="assets/preuves/stage1-attestation.pdf">Attestation de stage (PDF)</a></p>
+      </article>
+      <article class="card">
+        <h3>Stage 2 : [Nom de l'entreprise]</h3>
+        <p class="meta">[Dates] · [Durée] · [Ville]</p>
+        <p><strong>L'entreprise :</strong> [activité, taille, service informatique].</p>
+        <p><strong>Mes missions :</strong> [missions principales].</p>
+        <p><strong>Ce que j'ai appris :</strong> [compétences acquises].</p>
+        <p><a href="assets/preuves/stage2-attestation.pdf">Attestation de stage (PDF)</a></p>
+      </article>
+    </div>
+  </div>
+</section>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
+<!-- VEILLE -->
+<section id="veille">
+  <div class="wrap">
+    <h2>Veille technologique</h2>
 
-        document.querySelectorAll('.container, .timeline-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 0.6s ease';
-            observer.observe(el);
-        });
-    </script>
+    <div class="cols">
+      <div>
+        <h3>Qu'est-ce que la veille technologique ?</h3>
+        <p>C'est la surveillance organisée des évolutions techniques et des menaces d'un domaine : on collecte l'information, on la trie, on l'analyse puis on la partage.</p>
+        <h3>À quoi sert-elle ?</h3>
+        <p>À anticiper les changements, garder ses compétences à jour, choisir les bonnes solutions et réagir vite aux failles de sécurité.</p>
+      </div>
+      <div>
+        <h3>Mon sujet de veille</h3>
+        <p><strong>Sujet :</strong> [ex. l'évolution du marché de la virtualisation et les alternatives à VMware : Proxmox, Hyper-V, conteneurs].</p>
+        <p><strong>Problématique :</strong> [ex. quelle solution de virtualisation choisir pour une PME ?].</p>
+        <p><strong>Thématiques :</strong> virtualisation, conteneurisation (Docker, Kubernetes), cybersécurité, cloud, automatisation.</p>
+      </div>
+    </div>
+
+    <h3 class="sub">Mes sources et outils</h3>
+    <div class="tags">
+      <span>Feedly (flux RSS)</span><span>CERT-FR</span><span>ANSSI</span><span>LeMagIT</span><span>LinkedIn</span><span>Newsletters spécialisées</span>
+    </div>
+    <p class="note">Organisation : 30 minutes, 2 fois par semaine, tri des articles dans Feedly, synthèse mensuelle. <!-- À adapter --></p>
+
+    <h3 class="sub">Synthèses</h3>
+    <div class="cols">
+      <article class="card"><p class="meta">[Mois 2026]</p><h3>[Titre de l'article]</h3><p>[Résumé en 3 lignes et lien vers la source.]</p></article>
+      <article class="card"><p class="meta">[Mois 2026]</p><h3>[Titre de l'article]</h3><p>[Résumé en 3 lignes et lien vers la source.]</p></article>
+      <article class="card"><p class="meta">[Mois 2026]</p><h3>[Titre de l'article]</h3><p>[Résumé en 3 lignes et lien vers la source.]</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- DOCUMENTS -->
+<section id="documents" class="alt">
+  <div class="wrap">
+    <h2>Documents</h2>
+    <ul class="docs">
+      <li><a href="assets/CV-Hippolite-Spiegel.pdf" download>Curriculum vitae (PDF)</a></li>
+      <li><a href="assets/preuves/tableau-de-synthese.pdf" download>Tableau de synthèse (PDF)</a></li>
+      <li><a href="assets/preuves/attestation-veille.pdf" download>Fiche de veille technologique (PDF)</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <div class="cols">
+      <div>
+        <p>Une question, une proposition de stage ou d'alternance ? Écris-moi.</p>
+        <ul class="docs">
+          <li>Email : <a href="mailto:hippolite.spiegel@gmail.com">hippolite.spiegel@gmail.com</a></li>
+          <li>Téléphone : <a href="tel:+33767181805">07 67 18 18 05</a></li>
+          <li>Lieu : Metz, France</li>
+        </ul>
+      </div>
+      <form id="form" novalidate>
+        <label for="name">Nom</label>
+        <input id="name" name="name" type="text" required autocomplete="name">
+        <label for="subject">Sujet</label>
+        <input id="subject" name="subject" type="text" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button class="btn" type="submit">Ouvrir mon application mail</button>
+        <p class="note" id="msg" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2025-2026 Hippolite Spiegel · Portfolio BTS SIO option SISR</p>
+    <p class="note">Les données personnelles affichées sur ce site (email, téléphone) ne sont utilisées que pour me contacter. Les noms d'entreprises et documents de stage sont publiés avec l'accord de leurs responsables.</p>
+  </div>
+</footer>
+
+<script>
+  // Menu mobile
+  const burger = document.getElementById('burger');
+  const menu = document.getElementById('menu');
+  burger.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  menu.addEventListener('click', e => {
+    if (e.target.tagName === 'A') { menu.classList.remove('open'); burger.setAttribute('aria-expanded', false); }
+  });
+
+  // Lien actif selon la section visible
+  const links = [...menu.querySelectorAll('a')];
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (en.isIntersecting) {
+        links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id));
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  document.querySelectorAll('main section').forEach(s => io.observe(s));
+
+  // Formulaire : ouvre l'application mail (pas de serveur nécessaire)
+  document.getElementById('form').addEventListener('submit', e => {
+    e.preventDefault();
+    const f = e.target;
+    if (!f.checkValidity()) { document.getElementById('msg').textContent = 'Remplis tous les champs avant d\'envoyer.'; return; }
+    const body = encodeURIComponent(f.message.value + '\n\n' + f.name.value);
+    location.href = 'mailto:hippolite.spiegel@gmail.com?subject=' + encodeURIComponent(f.subject.value) + '&body=' + body;
+    document.getElementById('msg').textContent = 'Ton application mail s\'ouvre avec le message prêt à envoyer.';
+  });
+</script>
 </body>
 </html>
